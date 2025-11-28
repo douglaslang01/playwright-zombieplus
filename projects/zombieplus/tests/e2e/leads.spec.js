@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-const { LandingPage } = require('./pages/landingPage');
+const { LandingPage } = require('../pages/landingPage');
 
 let landingPage;
 
@@ -25,7 +25,7 @@ test('não deve cadastrar um lead com email incorreto', async ({ page }) => {
 
   await landingPage.submitLeadForm('Douglas Lang', 'gmail.com');
 
-  await landingPage.alertHaveText('Email incorreto');
+  await landingPage.alertToHaveText('Email incorreto');
 });
 
 test('não deve cadastrar um lead quando o nome não é preenchido', async ({ page }) => {
@@ -35,7 +35,7 @@ test('não deve cadastrar um lead quando o nome não é preenchido', async ({ pa
 
   await landingPage.submitLeadForm('', 'douglas.lang@gmail.com');
 
-  await landingPage.alertHaveText('Campo obrigatório');
+  await landingPage.alertToHaveText('Campo obrigatório');
 });
 
 test('não deve cadastrar um lead quando email não é preeenchido', async ({ page }) => {
@@ -45,11 +45,14 @@ test('não deve cadastrar um lead quando email não é preeenchido', async ({ pa
 
   await landingPage.submitLeadForm('Douglas Lang', '');
 
-  await landingPage.alertHaveText('Campo obrigatório');
+  await landingPage.alertToHaveText('Campo obrigatório');
 });
 
 test('não deve cadastrar um lead quando nenhum campo não é preeenchido', async ({ page }) => {
-  await landingPage.alertHaveText([
+  await landingPage.visit();
+  await landingPage.openModal();
+  await landingPage.submitLeadForm('', '');
+  await landingPage.alertToHaveText([
     'Campo obrigatório',
     'Campo obrigatório'
   ]);

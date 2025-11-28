@@ -35,7 +35,7 @@ export class LandingPage {
         await expect(toast).not.toBeVisible({ timeout: 5000 });
     }
 
-    async alertHaveText(target) {
+    async alertToHaveText(target) {
         await expect(this.page.locator('.alert')).toHaveText(target);
     }
 }
