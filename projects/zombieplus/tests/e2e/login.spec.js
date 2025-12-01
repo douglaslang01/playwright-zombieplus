@@ -22,3 +22,31 @@ test('não deve logar com senha incorreta', async ({ page }) => {
     const message = 'Oops!Ocorreu um erro ao tentar efetuar o login. Por favor, verifique suas credenciais e tente novamente.';
     await toast.haveText(message);
 });
+
+test('não deve logar quando o email não é inválido', async ({ page }) => {
+    await loginPage.visit();
+    await loginPage.submit('gmail.com', 'abc123');
+
+    await loginPage.alertHaveText('Email incorreto');
+});
+
+test('não deve logar quando o email não é preenchido', async ({ page }) => {
+    await loginPage.visit();
+    await loginPage.submit('', 'abc123');
+
+    await loginPage.alertHaveText('Campo obrigatório');
+});
+
+test('não deve logar quando a senha não é preenchido', async ({ page }) => {
+    await loginPage.visit();
+    await loginPage.submit('douglas.lang@gmail.com', '');
+
+    await loginPage.alertHaveText('Campo obrigatório');
+});
+
+test('não deve logar quando nenhum campo é preenchido', async ({ page }) => {
+    await loginPage.visit();
+    await loginPage.submit('', '');
+
+    await loginPage.alertHaveText(['Campo obrigatório', 'Campo obrigatório']);
+});
