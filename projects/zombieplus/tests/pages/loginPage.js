@@ -19,15 +19,6 @@ export class LoginPage {
         await this.page.getByText('Entrar').click();
     }
 
-    async isLoggedIn() {
-        // const logOut = this.page.locator('a[href="/logout"]');
-        // await expect((logOut)).toBeVisible();
-
-        //await expect(this.page).toHaveURL('http://localhost:3000/admin/movies');
-        await this.page.waitForLoadState('networkidle');
-        await expect(this.page).toHaveURL(/.*admin/);
-    }
-
     async alertHaveText(text) {
         const alert = this.page.locator('span[class$=alert]');
 
