@@ -23,16 +23,21 @@ test('deve cadastrar um lead na fila de espera', async ({ page }) => {
   await toast.haveText(message);
 });
 
-
-test('não deve cadastrar quando o email já existe', async ({ page }) => {
+test('não deve cadastrar quando o email já existe', async ({ page, request }) => {
   const leadName = faker.person.fullName();
   const leadEmail = faker.internet.email();
 
-  for (let index = 0; index <= 1; index++) {
-    await landingPage.visit();
-    await landingPage.openModal();
-    await landingPage.submitLeadForm(leadName, leadEmail);
-  }
+  const newLead = await request.post('http://localhost:3333/leads', {
+    data: {
+      name: leadName,
+      email: leadEmail
+    }
+  });
+  expect(newLead.ok()).toBeTruthy();
+
+  await landingPage.visit();
+  await landingPage.openModal();
+  await landingPage.submitLeadForm(leadName, leadEmail);
 
   const message = 'O endereço de e-mail fornecido já está registrado em nossa fila de espera.';
   await toast.haveText(message);
