@@ -1,8 +1,6 @@
 
 import { expect } from '@playwright/test';
 
-
-
 export class MoviesPage {
 
     constructor(page) {
