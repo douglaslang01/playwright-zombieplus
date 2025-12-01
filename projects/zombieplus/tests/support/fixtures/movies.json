@@ -1,0 +1,82 @@
+{
+    "guerra_mundial_z": {
+        "title": "Guerra Mundial Z",
+        "overview": "Um ex-investigador da ONU viaja pelo mundo tentando conter uma pandemia global que transforma humanos em zumbis.",
+        "company": "Paramount Pictures",
+        "release_year": 2013,
+        "featured": false,
+        "cover": "/img/world-war-z.jpg"
+    },
+    "madrugada_dos_mortos_2004": {
+        "title": "Madrugada dos Mortos",
+        "overview": "Um grupo de sobreviventes se refugia em um shopping enquanto um surto zumbi devasta a população.",
+        "company": "Universal Pictures",
+        "release_year": 2004,
+        "featured": false,
+        "cover": "/img/dawn-of-the-dead.jpg"
+    },
+    "a_noite_dos_mortos_vivos_1968": {
+        "title": "A Noite dos Mortos-Vivos",
+        "overview": "Um grupo de pessoas fica preso em uma casa enquanto mortos reanimados começam a atacar.",
+        "company": "Continental Distributing",
+        "release_year": 1968,
+        "featured": false,
+        "cover": "/img/night-of-the-living-dead.jpg"
+    },
+    "exterminio_2002": {
+        "title": "Extermínio",
+        "overview": "Após um vírus devastar o Reino Unido, sobreviventes lutam contra infectados extremamente agressivos.",
+        "company": "Fox Searchlight Pictures",
+        "release_year": 2002,
+        "featured": false,
+        "cover": "/img/28-days-later.jpg"
+    },
+    "resident_evil_o_hospede_maldito_2002": {
+        "title": "Resident Evil: O Hóspede Maldito",
+        "overview": "Uma equipe militar tenta conter um surto zumbi dentro de um laboratório subterrâneo da Umbrella Corporation.",
+        "company": "Sony Pictures Releasing",
+        "release_year": 2002,
+        "featured": false,
+        "cover": "/img/resident-evil.jpg"
+    },
+    "zumbilandia_2009": {
+        "title": "Zumbilândia",
+        "overview": "Um grupo improvável de sobreviventes tenta manter o bom humor enquanto enfrenta mortos-vivos nos EUA.",
+        "company": "Columbia Pictures",
+        "release_year": 2009,
+        "featured": false,
+        "cover": "/img/zombieland.jpg"
+    },
+    "o_despertar_dos_mortos_1978": {
+        "title": "O Despertar dos Mortos",
+        "overview": "Sobreviventes se refugiam em um shopping enquanto hordas de zumbis tomam o mundo.",
+        "company": "United Film Distribution Company",
+        "release_year": 1978,
+        "featured": false,
+        "cover": "/img/dawn-of-the-dead-1978.jpg"
+    },
+    "re_animator_1985": {
+        "title": "Re-Animator",
+        "overview": "Um estudante de medicina desenvolve um soro que reanima cadáveres, gerando caos.",
+        "company": "Empire Pictures",
+        "release_year": 1985,
+        "featured": false,
+        "cover": "/img/re-animator.jpg"
+    },
+    "a_volta_dos_mortos_vivos_1985": {
+        "title": "A Volta dos Mortos Vivos",
+        "overview": "Um gás experimental transforma mortos em zumbis conscientes e famintos por cérebros.",
+        "company": "Orion Pictures",
+        "release_year": 1985,
+        "featured": false,
+        "cover": "/img/return-of-the-living-dead.jpg"
+    },
+    "todo_mundo_quase_morto_2004": {
+        "title": "Todo Mundo Quase Morto",
+        "overview": "Shaun tenta reorganizar sua vida enquanto enfrenta um apocalipse zumbi de forma cômica.",
+        "company": "Universal Pictures",
+        "release_year": 2004,
+        "featured": false,
+        "cover": "/img/shaun-of-the-dead.jpg"
+    }
+}
