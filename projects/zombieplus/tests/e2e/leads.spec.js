@@ -12,11 +12,29 @@ test.beforeEach(async ({ page }) => {
 });
 
 test('deve cadastrar um lead na fila de espera', async ({ page }) => {
+  const leadName = faker.person.fullName();
+  const leadEmail = faker.internet.email();
+
   await landingPage.visit();
   await landingPage.openModal();
-  await landingPage.submitLeadForm(faker.person.fullName(), faker.internet.email());
+  await landingPage.submitLeadForm(leadName, leadEmail);
 
   const message = 'Agradecemos por compartilhar seus dados conosco. Em breve, nossa equipe entrará em contato!';
+  await toast.haveText(message);
+});
+
+
+test('não deve cadastrar quando o email já existe', async ({ page }) => {
+  const leadName = faker.person.fullName();
+  const leadEmail = faker.internet.email();
+
+  for (let index = 0; index <= 1; index++) {
+    await landingPage.visit();
+    await landingPage.openModal();
+    await landingPage.submitLeadForm(leadName, leadEmail);
+  }
+
+  const message = 'O endereço de e-mail fornecido já está registrado em nossa fila de espera.';
   await toast.haveText(message);
 });
 
