@@ -24,7 +24,7 @@ export class LandingPage {
         await this.page.getByTestId('modal').getByText('Quero entrar na fila!').click();
     }
 
-    async toastToHaveText(message) {
+    async toastHaveText(message) {
         const toast = this.page.locator('.toast');
 
         await expect(toast).toHaveText(message);
@@ -32,7 +32,7 @@ export class LandingPage {
         await expect(toast).not.toBeVisible({ timeout: 5000 });
     }
 
-    async alertToHaveText(target) {
+    async alertHaveText(target) {
         await expect(this.page.locator('.alert')).toHaveText(target);
     }
 }

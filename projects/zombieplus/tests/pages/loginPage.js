@@ -1,4 +1,3 @@
-
 import { expect } from '@playwright/test';
 
 export class LoginPage {
@@ -28,5 +27,4 @@ export class LoginPage {
         await this.page.waitForLoadState('networkidle');
         await expect(this.page).toHaveURL(/.*admin/);
     }
-
 }
