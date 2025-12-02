@@ -21,8 +21,6 @@ export class Api {
     }
 
     async getCompanyIdByName(companyName) {
-        await this.setToken();
-
         const response = await this.request.get('http://localhost:3333/companies', {
             headers: {
                 Authorization: 'Bearer ' + this.token,
@@ -37,7 +35,6 @@ export class Api {
     }
 
     async postMovie(movie) {
-
         const companyId = await this.getCompanyIdByName(movie.company);
 
         const response = await this.request.post('http://localhost:3333/movies', {
@@ -56,6 +53,4 @@ export class Api {
         });
         expect(response.ok()).toBeTruthy();
     }
-
-
 }
