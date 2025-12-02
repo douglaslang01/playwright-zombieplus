@@ -35,6 +35,9 @@ export class Movies {
             .filter({ hasText: movie.release_year })
             .click()
 
+        await this.page.locator('input[name=cover]')
+            .setInputFiles(`tests/support/fixtures/${movie.cover}`)
+
         await this.submit();
     }
 
