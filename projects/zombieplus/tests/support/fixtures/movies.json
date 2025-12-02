@@ -7,13 +7,13 @@
         "featured": true,
         "cover": "/covers/movies/wwz.png"
     },
-    "madrugada_dos_mortos_2004": {
-        "title": "Madrugada dos Mortos",
-        "overview": "Um grupo de sobreviventes se refugia em um shopping enquanto um surto zumbi devasta a população.",
-        "company": "Universal Pictures",
-        "release_year": 2004,
+    "duplicate": {
+        "title": "Resident Evil: O Hóspede Maldito",
+        "overview": "Uma equipe militar tenta conter um surto zumbi dentro de um laboratório subterrâneo da Umbrella Corporation.",
+        "company": "Sony Pictures",
+        "release_year": 2002,
         "featured": false,
-        "cover": "/img/dawn-of-the-dead.jpg"
+        "cover": "/covers/movies/resident-evil.jpg"
     },
     "a_noite_dos_mortos_vivos_1968": {
         "title": "A Noite dos Mortos-Vivos",
@@ -31,13 +31,13 @@
         "featured": false,
         "cover": "/img/28-days-later.jpg"
     },
-    "resident_evil_o_hospede_maldito_2002": {
-        "title": "Resident Evil: O Hóspede Maldito",
-        "overview": "Uma equipe militar tenta conter um surto zumbi dentro de um laboratório subterrâneo da Umbrella Corporation.",
-        "company": "Sony Pictures Releasing",
-        "release_year": 2002,
+    "madrugada_dos_mortos_2004": {
+        "title": "Madrugada dos Mortos",
+        "overview": "Um grupo de sobreviventes se refugia em um shopping enquanto um surto zumbi devasta a população.",
+        "company": "Universal Pictures",
+        "release_year": 2004,
         "featured": false,
-        "cover": "/img/resident-evil.jpg"
+        "cover": "/img/dawn-of-the-dead.jpg"
     },
     "zumbilandia_2009": {
         "title": "Zumbilândia",

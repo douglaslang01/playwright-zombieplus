@@ -1,5 +1,4 @@
 import { expect } from '@playwright/test';
-import { userInfo } from 'node:os';
 
 export class Login {
 
