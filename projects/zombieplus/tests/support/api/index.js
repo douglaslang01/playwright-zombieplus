@@ -1,5 +1,4 @@
 import { expect } from '@playwright/test';
-import { type } from 'os';
 
 export class Api {
     constructor(request) {
@@ -14,7 +13,6 @@ export class Api {
                 password: 'pwd123'
             }
         });
-
         expect(response.ok()).toBeTruthy();
         const body = JSON.parse(await response.text());
         this.token = body.token;
