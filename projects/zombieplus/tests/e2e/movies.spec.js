@@ -1,4 +1,4 @@
-const { test, expect } = require('../support');
+const { test } = require('../support');
 
 const data = require('../support/fixtures/movies.json')
 const { executeSQL } = require('../support/database');
@@ -49,14 +49,13 @@ test('não deve cadastrar quando os campos obrigatórios não são preenchidos',
 test('deve realizar busca pelo termo morto', async ({ page, request }) => {
     const movies = data.search;
 
-    movies.data.forEach(async (m) => {
+    for (const m of movies.data) {
         await executeSQL(`DELETE FROM movies WHERE title = '${m.title}';`);
         await request.api.postMovie(m);
-    });
+    }
 
     await page.login.do('admin@zombieplus.com', 'pwd123', 'Admin');
     await page.movies.search(movies.input);
 
-    const rows = page.getByRole('row');
-    await expect(rows).toContainText(movies.outputs);
+    await page.movies.tableHave(movies.outputs);
 });
