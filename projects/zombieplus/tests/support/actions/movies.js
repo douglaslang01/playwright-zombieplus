@@ -45,6 +45,13 @@ export class Movies {
         await this.submit();
     }
 
+    async search(target) {
+        //input[placeholder="Busque pelo nome"]
+        await this.page.getByPlaceholder('Busque pelo nome').fill(target);
+
+        await this.page.locator('.actions button').click();
+    }
+
     async alertHaveText(target) {
         await expect(this.page.locator('.alert')).toHaveText(target);
     }

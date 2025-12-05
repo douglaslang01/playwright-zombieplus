@@ -23,60 +23,38 @@
         "featured": false,
         "cover": "/covers/movies/mortos-vivos.jpg"
     },
-    "exterminio_2002": {
-        "title": "Extermínio",
-        "overview": "Após um vírus devastar o Reino Unido, sobreviventes lutam contra infectados extremamente agressivos.",
-        "company": "Fox Searchlight Pictures",
-        "release_year": 2002,
-        "featured": false,
-        "cover": "/img/28-days-later.jpg"
-    },
-    "madrugada_dos_mortos_2004": {
-        "title": "Madrugada dos Mortos",
-        "overview": "Um grupo de sobreviventes se refugia em um shopping enquanto um surto zumbi devasta a população.",
-        "company": "Universal Pictures",
-        "release_year": 2004,
-        "featured": false,
-        "cover": "/img/dawn-of-the-dead.jpg"
-    },
-    "zumbilandia_2009": {
-        "title": "Zumbilândia",
-        "overview": "Um grupo improvável de sobreviventes tenta manter o bom humor enquanto enfrenta mortos-vivos nos EUA.",
-        "company": "Columbia Pictures",
-        "release_year": 2009,
-        "featured": false,
-        "cover": "/img/zombieland.jpg"
-    },
-    "o_despertar_dos_mortos_1978": {
-        "title": "O Despertar dos Mortos",
-        "overview": "Sobreviventes se refugiam em um shopping enquanto hordas de zumbis tomam o mundo.",
-        "company": "United Film Distribution Company",
-        "release_year": 1978,
-        "featured": false,
-        "cover": "/img/dawn-of-the-dead-1978.jpg"
-    },
-    "re_animator_1985": {
-        "title": "Re-Animator",
-        "overview": "Um estudante de medicina desenvolve um soro que reanima cadáveres, gerando caos.",
-        "company": "Empire Pictures",
-        "release_year": 1985,
-        "featured": false,
-        "cover": "/img/re-animator.jpg"
-    },
-    "a_volta_dos_mortos_vivos_1985": {
-        "title": "A Volta dos Mortos Vivos",
-        "overview": "Um gás experimental transforma mortos em zumbis conscientes e famintos por cérebros.",
-        "company": "Orion Pictures",
-        "release_year": 1985,
-        "featured": false,
-        "cover": "/img/return-of-the-living-dead.jpg"
-    },
-    "todo_mundo_quase_morto_2004": {
-        "title": "Todo Mundo Quase Morto",
-        "overview": "Shaun tenta reorganizar sua vida enquanto enfrenta um apocalipse zumbi de forma cômica.",
-        "company": "Universal Pictures",
-        "release_year": 2004,
-        "featured": false,
-        "cover": "/img/shaun-of-the-dead.jpg"
+    "search": {
+        "input": "morto",
+        "outputs": [
+            "Madrugada dos Mortos",
+            "O Despertar dos Mortos",
+            "A Volta dos Mortos Vivos"
+        ],
+        "data": [
+            {
+                "title": "Madrugada dos Mortos",
+                "overview": "Um grupo de sobreviventes se refugia em um shopping enquanto um surto zumbi devasta a população.",
+                "company": "Universal Pictures",
+                "release_year": 2004,
+                "featured": false,
+                "cover": "/covers/movies/madrugada.jpg"
+            },
+            {
+                "title": "O Despertar dos Mortos",
+                "overview": "Sobreviventes se refugiam em um shopping enquanto hordas de zumbis tomam o mundo.",
+                "company": "Fox Entertainment",
+                "release_year": 1978,
+                "featured": false,
+                "cover": "/covers/movies/dead-snow.jpg"
+            },
+            {
+                "title": "A Volta dos Mortos Vivos",
+                "overview": "Um gás experimental transforma mortos em zumbis conscientes e famintos por cérebros.",
+                "company": "Columbia Pictures",
+                "release_year": 1985,
+                "featured": false,
+                "cover": "/covers/movies/mostor-vivos-2.jpg"
+            }
+        ]
     }
 }
