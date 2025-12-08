@@ -1,8 +1,8 @@
 {
-    "the_walking_dead": {
+    "create": {
         "title": "The Walking Dead",
         "overview": "Um grupo de sobreviventes luta pela vida após um surto zumbi devastar o mundo.",
-        "company": "AMC",
+        "company": "Sony Pictures",
         "release_year": 2010,
         "seasons": 11,
         "featured": false,
@@ -11,7 +11,7 @@
     "fear_the_walking_dead": {
         "title": "Fear the Walking Dead",
         "overview": "A origem do surto zumbi é explorada através de uma família tentando sobreviver ao colapso da sociedade.",
-        "company": "AMC",
+        "company": "Sony Pictures",
         "release_year": 2015,
         "seasons": 8,
         "featured": false,
@@ -20,7 +20,7 @@
     "the_walking_dead_world_beyond": {
         "title": "The Walking Dead: World Beyond",
         "overview": "Um grupo de jovens que cresceu após o apocalipse embarca em uma jornada perigosa para além de sua comunidade protegida.",
-        "company": "AMC",
+        "company": "Sony Pictures",
         "release_year": 2020,
         "seasons": 2,
         "featured": false,
