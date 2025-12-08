@@ -1,8 +1,9 @@
-import { expect } from '@playwright/test';
+import { BaseActions } from './components';
 
-export class Movies {
+export class Movies extends BaseActions {
 
     constructor(page) {
+        super(page);
         this.page = page;
     }
 
@@ -61,8 +62,7 @@ export class Movies {
         await expect(this.page.locator('.alert')).toHaveText(target);
     }
 
-    async remove(title) {
-        await this.page.getByRole('row', { name: title }).getByRole('button').click(); //td[text()="Resident Evil: O Hóspede Maldito"]/..//button
-        await this.page.click('.confirm-removal');
-    }
+    // async remove(title) {
+    //     super.remove(title);
+    // }
 }

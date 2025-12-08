@@ -1,13 +1,18 @@
-import { expect } from '@playwright/test';
+import { BaseActions } from './components';
 
-export class TvShows {
+export class TvShows extends BaseActions {
 
     constructor(page) {
+        super(page);
         this.page = page;
     }
 
-    async goForm() {
+    async visit() {
         await this.page.locator('a[href$="/tvshows"]').click();
+    }
+
+    async goForm() {
+        await this.visit();
         await this.page.locator('a[href$="/register"]').click();
     }
 
@@ -45,5 +50,10 @@ export class TvShows {
         }
 
         await this.submit();
+    }
+
+    async remove(title) {
+        await this.visit();
+        super.remove(title);
     }
 }
