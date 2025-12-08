@@ -46,3 +46,16 @@ test('não deve cadastrar quando os campos obrigatórios não são preenchidos',
         'Campo obrigatório (apenas números)'
     ])
 });
+
+test('deve realizar busca pelo termo Walking', async ({ page, request }) => {
+    const tvshows = data.search;
+
+    for (const ts of tvshows.data) {
+        await executeSQL(`DELETE FROM tvshows WHERE title = '${ts.title}';`);
+        await request.api.postTvShow(ts);
+    }
+    await page.login.do('admin@zombieplus.com', 'pwd123', 'Admin');
+    await page.tvshows.search(tvshows.input);
+
+    await page.tvshows.tableHave(tvshows.outputs);
+});

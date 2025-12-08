@@ -52,6 +52,11 @@ export class TvShows extends BaseActions {
         await this.submit();
     }
 
+    async search(target) {
+        this.visit();
+        super.search(target);
+    }
+
     async remove(title) {
         await this.visit();
         super.remove(title);

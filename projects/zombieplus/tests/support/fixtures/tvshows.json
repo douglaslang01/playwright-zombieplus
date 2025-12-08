@@ -1,32 +1,5 @@
 {
     "create": {
-        "title": "The Walking Dead",
-        "overview": "Um grupo de sobreviventes luta pela vida após um surto zumbi devastar o mundo.",
-        "company": "Sony Pictures",
-        "release_year": 2010,
-        "seasons": 11,
-        "featured": false,
-        "cover": "/covers/tvshows/the-walking-dead.jpg"
-    },
-    "to_remove": {
-        "title": "Fear the Walking Dead",
-        "overview": "A origem do surto zumbi é explorada através de uma família tentando sobreviver ao colapso da sociedade.",
-        "company": "Sony Pictures",
-        "release_year": 2015,
-        "seasons": 8,
-        "featured": false,
-        "cover": "/covers/tvshows/fear-the-walking-dead.jpg"
-    },
-    "duplicate": {
-        "title": "The Walking Dead: World Beyond",
-        "overview": "Um grupo de jovens que cresceu após o apocalipse embarca em uma jornada perigosa para além de sua comunidade protegida.",
-        "company": "Sony Pictures",
-        "release_year": 2020,
-        "seasons": 2,
-        "featured": false,
-        "cover": "/covers/tvshows/world-beyond.png"
-    },
-    "black_summer": {
         "title": "Black Summer",
         "overview": "Durante o início do apocalipse zumbi, uma mãe busca desesperadamente reencontrar sua filha.",
         "company": "Netflix",
@@ -35,16 +8,16 @@
         "featured": false,
         "cover": "/covers/tvshows/black-summer.jpg"
     },
-    "z_nation": {
+    "to_remove": {
         "title": "Z Nation",
         "overview": "Um grupo deve escoltar o único sobrevivente de uma mordida zumbi, esperança para a criação de uma cura.",
-        "company": "Syfy",
+        "company": "Netflix",
         "release_year": 2014,
         "seasons": 5,
         "featured": false,
         "cover": "/covers/tvshows/z-nation.jpg"
     },
-    "all_of_us_are_dead": {
+    "duplicate": {
         "title": "All of Us Are Dead",
         "overview": "Um colégio coreano se torna o epicentro de um surto zumbi, deixando estudantes presos e lutando por sobrevivência.",
         "company": "Netflix",
@@ -53,40 +26,41 @@
         "featured": false,
         "cover": "/covers/tvshows/all-of-us-are-dead.jpg"
     },
-    "kingdom": {
-        "title": "Kingdom",
-        "overview": "Na Coreia medieval, um príncipe investiga uma misteriosa praga que transforma pessoas em monstros vorazes.",
-        "company": "Netflix",
-        "release_year": 2019,
-        "seasons": 2,
-        "featured": false,
-        "cover": "/covers/tvshows/kingdom.jpg"
-    },
-    "daybreak": {
-        "title": "Daybreak",
-        "overview": "Após o apocalipse, um adolescente navega por uma Los Angeles dominada por zumbis e gangues.",
-        "company": "Netflix",
-        "release_year": 2019,
-        "seasons": 1,
-        "featured": false,
-        "cover": "/covers/tvshows/daybreak.jpg"
-    },
-    "i_zombie": {
-        "title": "iZombie",
-        "overview": "Uma médica transformada em zumbi usa suas habilidades especiais para ajudar a polícia a resolver crimes.",
-        "company": "The CW",
-        "release_year": 2015,
-        "seasons": 5,
-        "featured": false,
-        "cover": "/covers/tvshows/izombie.jpg"
-    },
-    "the_rain": {
-        "title": "The Rain",
-        "overview": "Após um vírus transmitido pela chuva devastar a Escandinávia, dois irmãos lutam pela sobrevivência.",
-        "company": "Netflix",
-        "release_year": 2018,
-        "seasons": 3,
-        "featured": false,
-        "cover": "/covers/tvshows/the-rain.jpg"
+    "search": {
+        "input": "Walking",
+        "outputs": [
+            "The Walking Dead",
+            "Fear the Walking Dead",
+            "The Walking Dead: World Beyond"
+        ],
+        "data": [
+            {
+                "title": "The Walking Dead",
+                "overview": "Um grupo de sobreviventes luta pela vida após um surto zumbi devastar o mundo.",
+                "company": "Sony Pictures",
+                "release_year": 2010,
+                "seasons": 11,
+                "featured": false,
+                "cover": "/covers/tvshows/the-walking-dead.jpg"
+            },
+            {
+                "title": "Fear the Walking Dead",
+                "overview": "A origem do surto zumbi é explorada através de uma família tentando sobreviver ao colapso da sociedade.",
+                "company": "Sony Pictures",
+                "release_year": 2015,
+                "seasons": 8,
+                "featured": false,
+                "cover": "/covers/tvshows/fear-the-walking-dead.jpg"
+            },
+            {
+                "title": "The Walking Dead: World Beyond",
+                "overview": "Um grupo de jovens que cresceu após o apocalipse embarca em uma jornada perigosa para além de sua comunidade protegida.",
+                "company": "Sony Pictures",
+                "release_year": 2020,
+                "seasons": 2,
+                "featured": false,
+                "cover": "/covers/tvshows/world-beyond.png"
+            }
+        ]
     }
 }
