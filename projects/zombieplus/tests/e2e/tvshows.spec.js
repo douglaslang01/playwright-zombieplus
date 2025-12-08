@@ -32,3 +32,17 @@ test('não deve cadastrar quando o titulo é duplicado', async ({ page, request 
     await page.tvshows.create(tvshow);
     await page.popup.haveText(`O título '${tvshow.title}' já consta em nosso catálogo. Por favor, verifique se há necessidade de atualizações ou correções para este item.`);
 });
+
+test('não deve cadastrar quando os campos obrigatórios não são preenchidos', async ({ page }) => {
+    await page.login.do('admin@zombieplus.com', 'pwd123', 'Admin');
+    await page.tvshows.goForm();
+    await page.tvshows.submit();
+
+    await page.tvshows.alertHaveText([
+        'Campo obrigatório',
+        'Campo obrigatório',
+        'Campo obrigatório',
+        'Campo obrigatório',
+        'Campo obrigatório (apenas números)'
+    ])
+});

@@ -1,4 +1,4 @@
-import { BaseActions } from './components';
+const { BaseActions } = require('./components');
 
 export class TvShows extends BaseActions {
 

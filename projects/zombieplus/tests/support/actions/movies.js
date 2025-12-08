@@ -1,4 +1,5 @@
-import { BaseActions } from './components';
+const { expect } = require('@playwright/test');
+const { BaseActions } = require('./components');
 
 export class Movies extends BaseActions {
 
@@ -58,9 +59,9 @@ export class Movies extends BaseActions {
         await expect(rows).toContainText(content);
     }
 
-    async alertHaveText(target) {
-        await expect(this.page.locator('.alert')).toHaveText(target);
-    }
+    // async alertHaveText(target) {
+    //     await expect(this.page.locator('.alert')).toHaveText(target);
+    // }
 
     // async remove(title) {
     //     super.remove(title);

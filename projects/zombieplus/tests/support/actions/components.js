@@ -1,4 +1,4 @@
-import { expect } from '@playwright/test';
+const { expect } = require('@playwright/test');
 
 export class Popup {
 
@@ -20,8 +20,13 @@ export class BaseActions {
         this.page = page;
     }
 
+    async alertHaveText(target) {
+        await expect(this.page.locator('.alert')).toHaveText(target);
+    }
+
     async remove(title) {
         await this.page.getByRole('row', { name: title }).getByRole('button').click();
         await this.page.click('.confirm-removal');
     }
+
 }
